@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism Explorer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tourism Explorer</h1>
+    <div class="grid">
+      <!-- Blogs Section -->
+      <div>
+        <h2>Travel Blogs</h2>
+        <div class="card">
+          <h3>Exploring the Alps</h3>
+          <p>Discover the breathtaking beauty of the Alpine mountains...</p>
+        </div>
+        <div class="card">
+          <h3>Top Beaches in Hawaii</h3>
+          <p>Experience the serene and sunny beaches of Hawaii...</p>
+        </div>
+        <div class="card">
+          <h3>The Wonders of Niagara Falls</h3>
+          <p>Feel the power of nature at one of the world’s most famous waterfalls...</p>
+        </div>
+        <!-- Additional blogs here -->
+      </div>
+
+      <!-- User Input Section -->
+      <div>
+        <h2>Find Tourist Spots</h2>
+        <div class="input-group">
+          <label for="latitude">Latitude</label>
+          <div style="display: flex; gap: 10px;">
+            <input type="text" id="latitude" placeholder="Enter Latitude">
+            <button class="button" onclick="fetchCurrentLocation()">Get Current Location</button>
+          </div>
+        </div>
+        <div class="input-group">
+          <label for="longitude">Longitude</label>
+          <input type="text" id="longitude" placeholder="Enter Longitude">
+        </div>
+        <div class="input-group">
+          <label for="radius">Radius (km)</label>
+          <input type="number" id="radius" placeholder="Enter Radius">
+        </div>
+        <div class="input-group">
+          <label for="category">Category</label>
+          <select id="category">
+            <option value="attraction">Attraction</option>
+            <option value="beaches">Beaches</option>
+            <option value="waterfalls">Waterfalls</option>
+            <option value="parks">Parks</option>
+            <option value="museum">Museum</option>
+          </select>
+        </div>
+        <button class="button" onclick="searchSpots()">Search</button>
+
+        <div id="recommendations" style="margin-top: 20px;">
+          <!-- Recommendations will appear here -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
