@@ -55,7 +55,7 @@ def fetch_all_states_tourist_places(api_key, states, categories):
     return pd.DataFrame(all_places)
 
 if __name__ == "__main__":
-    API_KEY = "AIzaSyA3E3Oa1QtffQr1JJyXsZG-jNx2XdAa9Qw"
+    API_KEY = ""
 
     # Dictionary of Indian states and representative lat-long (major cities)
     STATES = {

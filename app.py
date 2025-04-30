@@ -9,7 +9,7 @@ data = pd.read_csv("indianspots.csv")
 dataset = pd.DataFrame(data)
 
 # Configure Gemini API
-API_KEY = "AIzaSyDmYmUXtC0KvrIU6PqNMyyJutIzqDcAd1c"  
+API_KEY = "Censored"  
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel("gemini-1.5-pro")
     

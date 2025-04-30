@@ -4,7 +4,7 @@ import time
 from datetime import datetime
 
 # Google Places API Key (Replace with your API Key)
-API_KEY = "AIzaSyA3E3Oa1QtffQr1JJyXsZG-jNx2XdAa9Qw"
+API_KEY = "Censored"
 
 # List of districts in Jammu & Kashmir and Ladakh with approximate coordinates
 LOCATIONS = {
